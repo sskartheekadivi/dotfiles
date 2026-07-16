@@ -1,0 +1,10 @@
+# Apply these rules globally to all projects
+CompileFlags:
+  Remove:
+    - -mabi=lp64
+    - -fno-allow-store-data-races
+    - -fzero-init-padding-bits=all
+    - -fmin-function-alignment=4
+    - -fconserve-stack
+    - -femit-struct-debug-baseonly
+    - -mstack-protector-guard=*
