@@ -8,3 +8,6 @@ CompileFlags:
     - -fconserve-stack
     - -femit-struct-debug-baseonly
     - -mstack-protector-guard=*
+    - -mstack-protector-guard-reg=*
+    - -mstack-protector-guard-offset=*
+    - -mbranch-protection=*

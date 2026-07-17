@@ -1,11 +1,11 @@
 {
+  "cyberdream.nvim": { "branch": "main", "commit": "b9cc88378b776f33d3ea77164716f37c3f13ef72" },
   "fzf-lua": { "branch": "main", "commit": "532d463f5c83595192fe740572d8fd6902b2217a" },
   "gitsigns.nvim": { "branch": "main", "commit": "31d6fb2d618bca1482b9f274751ead5f03461408" },
   "harpoon": { "branch": "harpoon2", "commit": "87b1a3506211538f460786c23f98ec63ad9af4e5" },
-  "kanagawa.nvim": { "branch": "master", "commit": "bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3" },
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
   "lualine.nvim": { "branch": "master", "commit": "221ce6b2d999187044529f49da6554a92f740a96" },
-  "mini.nvim": { "branch": "main", "commit": "9459d7f41ae77d909579dab0aea2bdd3210fac9f" },
+  "mini.nvim": { "branch": "main", "commit": "1345d191bb3da9c7b0e977f4387c5761f9bff68d" },
   "nvim-lspconfig": { "branch": "master", "commit": "b386c50cd7816f8c8a2b13b298a218af1f5a75c6" },
   "nvim-treesitter": { "branch": "main", "commit": "4916d6592ede8c07973490d9322f187e07dfefac" },
   "nvim-web-devicons": { "branch": "master", "commit": "0ca28b61a04fe7426cefbdd52c2647ef0e335b5f" },

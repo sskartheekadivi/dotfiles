@@ -16,7 +16,6 @@ return {
         cmd = {
           "clangd",
           "--background-index",
-          "--clang-tidy=false",
           "--query-driver=**/*gcc*",
           "--header-insertion=never",
           "--completion-style=detailed",
