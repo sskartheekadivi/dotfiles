@@ -6,7 +6,7 @@
 ![Shell](https://img.shields.io/badge/shell-zsh-89B4FA?style=flat-square)
 ![Neovim](https://img.shields.io/badge/Neovim-0.9+-57A143?style=flat-square&logo=neovim&logoColor=white)
 ![tmux](https://img.shields.io/badge/tmux-3.2a-1BB91F?style=flat-square)
-![Theme](https://img.shields.io/badge/theme-Kanagawa_·_Catppuccin-CBA6F7?style=flat-square)
+![Theme](https://img.shields.io/badge/theme-Kanagawa_Dragon-DCD7BA?style=flat-square)
 
 Personal development environment — Neovim, tmux, and clangd configured for systems / Linux kernel work.
 
