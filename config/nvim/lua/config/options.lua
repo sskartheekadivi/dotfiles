@@ -17,6 +17,8 @@ opt.expandtab = false
 opt.smartindent = true
 
 -- Visual Limits
+vim.opt.cursorline = true   -- Highlights the current row
+vim.opt.cursorcolumn = true -- Highlights the current column
 opt.colorcolumn = "80,100"
 
 -- Search
