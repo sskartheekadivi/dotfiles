@@ -31,6 +31,7 @@ return {
           vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
           vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
 	  vim.keymap.set("n", "gr", "<cmd>FzfLua lsp_references<CR>", opts)
+	  vim.keymap.set("n", "gs", "<cmd>FzfLua lsp_live_workspace_symbols<CR>", opts)
           vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
         end,
       })

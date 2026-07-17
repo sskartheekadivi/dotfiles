@@ -6,8 +6,8 @@ return {
       local fzf = require("fzf-lua")
       fzf.setup({ profile = "default-title" })
 
-      vim.keymap.set("n", "<Leader>ff", fzf.files, { desc = "Find Files" })
-      vim.keymap.set("n", "<Leader>fg", fzf.live_grep, { desc = "Live Grep" })
+      vim.keymap.set("n", "g/", "<cmd>FzfLua live_grep<CR>", { desc = "Global Search" })
+      vim.keymap.set("n", "gF", "<cmd>FzfLua files<CR>", { desc = "Find Files" })
       vim.keymap.set("n", "<Leader>fb", fzf.buffers, { desc = "Find Buffers" })
       vim.keymap.set("n", "<Leader>fh", fzf.help_tags, { desc = "Help Tags" })
     end,
