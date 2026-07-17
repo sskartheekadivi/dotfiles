@@ -1,6 +1,3 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
 local opt = vim.opt
 
 opt.number = true
@@ -20,6 +17,14 @@ opt.smartindent = true
 vim.opt.cursorline = true   -- Highlights the current row
 vim.opt.cursorcolumn = true -- Highlights the current column
 opt.colorcolumn = "80,100"
+
+-- Splits
+opt.splitbelow = true
+opt.splitright = true
+
+-- Scroll
+opt.scrolloff = 8
+opt.signcolumn = "yes"
 
 -- Search
 opt.ignorecase = true

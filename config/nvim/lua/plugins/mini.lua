@@ -1,7 +1,7 @@
 return {
   {
     "echasnovski/mini.nvim",
-    version = false,
+    version = "*",
     config = function()
       require("mini.trailspace").setup()
       require("mini.pairs").setup()

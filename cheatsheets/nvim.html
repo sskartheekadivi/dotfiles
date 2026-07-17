@@ -13,7 +13,7 @@
     <h1>Neovim</h1>
     <p>Keyboard reference</p>
     <div class="badges">
-      <span class="badge bg-green">Neovim 0.9+</span>
+      <span class="badge bg-green">Neovim 0.11+</span>
       <span class="badge bg-mauve">Kanagawa Dragon</span>
       <span class="badge bg-blue">clangd</span>
       <span class="badge bg-teal">Leader: Space</span>
@@ -59,11 +59,17 @@
         <tr><th>Key</th><th>Action</th></tr>
         <tr><td><kbd>g</kbd><kbd>d</kbd></td><td>Go to definition</td></tr>
         <tr><td><kbd>g</kbd><kbd>D</kbd></td><td>Go to declaration</td></tr>
+        <tr><td><kbd>g</kbd><kbd>i</kbd></td><td>Go to implementation</td></tr>
         <tr><td><kbd>g</kbd><kbd>r</kbd></td><td>Find all references</td></tr>
         <tr><td><kbd>g</kbd><kbd>s</kbd></td><td>Workspace symbols</td></tr>
         <tr><td><kbd>K</kbd></td><td>Hover documentation</td></tr>
+        <tr><td><kbd>Space</kbd> <kbd>r</kbd><kbd>n</kbd></td><td>Rename symbol</td></tr>
+        <tr><td><kbd>Space</kbd> <kbd>c</kbd><kbd>a</kbd></td><td>Code action</td></tr>
+        <tr><td><kbd>Space</kbd> <kbd>e</kbd></td><td>Show diagnostics float</td></tr>
+        <tr><td><kbd>]</kbd><kbd>d</kbd></td><td>Next diagnostic</td></tr>
+        <tr><td><kbd>[</kbd><kbd>d</kbd></td><td>Previous diagnostic</td></tr>
       </table>
-      <div class="note">Inline diagnostics are <strong>disabled</strong> — LSP is active but silent. Use <kbd>gr</kbd> and <kbd>K</kbd> to inspect.</div>
+      <div class="note">Inline diagnostics are <strong>disabled</strong> — use <kbd>Space e</kbd> to inspect, <kbd>]d</kbd> <kbd>[d</kbd> to navigate.</div>
     </div>
 
     <div class="section">
