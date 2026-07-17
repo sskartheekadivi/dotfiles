@@ -1,0 +1,225 @@
+/* Catppuccin Latte — print-optimised cheatsheet theme */
+
+:root {
+  --base:     #eff1f5;
+  --mantle:   #e6e9ef;
+  --crust:    #dce0e8;
+  --surface0: #ccd0da;
+  --surface1: #bcc0cc;
+  --overlay0: #9ca0b0;
+  --overlay1: #8c8fa1;
+  --subtext0: #6c6f85;
+  --subtext1: #5c5f77;
+  --text:     #4c4f69;
+  --mauve:    #8839ef;
+  --blue:     #1e66f5;
+  --sapphire: #209fb5;
+  --green:    #40a02b;
+  --teal:     #179299;
+  --peach:    #fe640b;
+}
+
+@page {
+  size: A4;
+  margin: 1cm;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 9pt;
+  line-height: 1.45;
+  color: var(--text);
+  background: var(--base);
+  padding: 1cm;
+}
+
+/* ── Header ──────────────────────────────────────── */
+
+.header {
+  text-align: center;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--mauve);
+}
+
+.header h1 {
+  font-size: 20pt;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.5px;
+}
+
+.header p {
+  font-size: 8.5pt;
+  color: var(--subtext0);
+  margin-top: 2px;
+}
+
+.badges {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.badge {
+  font-size: 7.5pt;
+  font-weight: 600;
+  padding: 1px 8px;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: 0.2px;
+}
+.bg-green   { background: var(--green); }
+.bg-mauve   { background: var(--mauve); }
+.bg-blue    { background: var(--blue); }
+.bg-teal    { background: var(--teal); }
+.bg-peach   { background: var(--peach); }
+.bg-sapphire{ background: var(--sapphire); }
+
+/* ── Legend bar ──────────────────────────────────── */
+
+.legend {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  align-items: center;
+  background: var(--mantle);
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-size: 8.5pt;
+  color: var(--subtext0);
+}
+
+.legend-item { display: flex; align-items: center; gap: 4px; }
+
+/* ── Two-column layout ───────────────────────────── */
+
+.columns {
+  column-count: 2;
+  column-gap: 0.7cm;
+  column-fill: auto;
+}
+
+/* ── Sections ────────────────────────────────────── */
+
+.section {
+  break-inside: avoid;
+  margin-bottom: 10px;
+}
+
+.break-before { break-before: column; }
+
+h2 {
+  font-size: 9pt;
+  font-weight: 700;
+  color: white;
+  background: var(--mauve);
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  break-after: avoid;
+  letter-spacing: 0.2px;
+}
+
+h3 {
+  font-size: 8.5pt;
+  font-weight: 600;
+  color: var(--mauve);
+  margin: 6px 0 3px;
+  break-after: avoid;
+}
+
+/* ── Tables ──────────────────────────────────────── */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  break-inside: avoid;
+  font-size: 8.5pt;
+  margin-bottom: 2px;
+}
+
+th {
+  background: var(--surface0);
+  color: var(--overlay1);
+  font-size: 7pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 2px 6px;
+  text-align: left;
+}
+
+td {
+  padding: 2px 6px;
+  border-bottom: 1px solid var(--crust);
+  vertical-align: middle;
+}
+
+tr:last-child td { border-bottom: none; }
+td:first-child   { white-space: nowrap; }
+td:last-child    { color: var(--subtext0); }
+
+/* ── Keyboard keys ───────────────────────────────── */
+
+kbd {
+  display: inline-block;
+  font-family: ui-monospace, 'Cascadia Code', 'Fira Code', monospace;
+  font-size: 7.5pt;
+  background: white;
+  color: var(--text);
+  border: 1px solid var(--surface1);
+  border-bottom: 2px solid var(--overlay0);
+  border-radius: 3px;
+  padding: 0 4px;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+/* ── Callouts ────────────────────────────────────── */
+
+.note, .tip {
+  font-size: 7.5pt;
+  padding: 3px 7px;
+  border-radius: 0 3px 3px 0;
+  margin: 4px 0 2px;
+  line-height: 1.4;
+  break-inside: avoid;
+  color: var(--subtext1);
+}
+
+.note { background: #dff0ff; border-left: 3px solid var(--sapphire); }
+.tip  { background: #e5f5e5; border-left: 3px solid var(--green); }
+
+/* ── Plugins list ────────────────────────────────── */
+
+.plugins {
+  font-size: 8pt;
+  color: var(--subtext0);
+  line-height: 1.6;
+}
+
+.plugins span {
+  display: inline-block;
+  background: var(--surface0);
+  border-radius: 3px;
+  padding: 0 5px;
+  font-family: ui-monospace, monospace;
+  font-size: 7.5pt;
+  color: var(--text);
+  margin-right: 3px;
+}
+
+/* ── Print overrides ─────────────────────────────── */
+
+@media print {
+  body       { background: white; padding: 0; }
+  .note      { background: #f0f8ff; }
+  .tip       { background: #f0fff0; }
+  .legend    { background: #f0f0f0; }
+}
