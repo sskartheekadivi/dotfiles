@@ -7,133 +7,131 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="page">
 
-<div class="header">
-  <h1>Neovim</h1>
-  <p>Keyboard reference</p>
-  <div class="badges">
-    <span class="badge bg-green">Neovim 0.9+</span>
-    <span class="badge bg-mauve">Kanagawa Dragon</span>
-    <span class="badge bg-blue">clangd</span>
-    <span class="badge bg-teal">Leader: Space</span>
-  </div>
-</div>
-
-<div class="legend">
-  <div class="legend-item"><kbd>Space</kbd>&nbsp; Leader key</div>
-  <div class="legend-item"><kbd>C-x</kbd>&nbsp; Ctrl + x</div>
-  <div class="legend-item"><kbd>]</kbd> <kbd>[</kbd>&nbsp; next / previous (repeatable)</div>
-</div>
-
-<div class="columns">
-
-  <div class="section">
-    <h2>Fuzzy Finding — fzf-lua</h2>
-    <table>
-      <tr><th>Key</th><th>Action</th></tr>
-      <tr><td><kbd>Space</kbd> <kbd>f</kbd> <kbd>f</kbd></td><td>Find files</td></tr>
-      <tr><td><kbd>Space</kbd> <kbd>f</kbd> <kbd>g</kbd></td><td>Live grep</td></tr>
-      <tr><td><kbd>Space</kbd> <kbd>f</kbd> <kbd>b</kbd></td><td>Find open buffers</td></tr>
-      <tr><td><kbd>Space</kbd> <kbd>f</kbd> <kbd>h</kbd></td><td>Search help tags</td></tr>
-    </table>
+  <div class="header">
+    <h1>Neovim</h1>
+    <p>Keyboard reference</p>
+    <div class="badges">
+      <span class="badge bg-green">Neovim 0.9+</span>
+      <span class="badge bg-mauve">Kanagawa Dragon</span>
+      <span class="badge bg-blue">clangd</span>
+      <span class="badge bg-teal">Leader: Space</span>
+    </div>
   </div>
 
-  <div class="section">
-    <h2>File Bookmarks — Harpoon</h2>
-    <table>
-      <tr><th>Key</th><th>Action</th></tr>
-      <tr><td><kbd>Space</kbd> <kbd>a</kbd></td><td>Add current file</td></tr>
-      <tr><td><kbd>C-e</kbd></td><td>Toggle quick menu</td></tr>
-      <tr><td><kbd>Space</kbd> <kbd>1</kbd></td><td>Jump to slot 1</td></tr>
-      <tr><td><kbd>Space</kbd> <kbd>2</kbd></td><td>Jump to slot 2</td></tr>
-      <tr><td><kbd>Space</kbd> <kbd>3</kbd></td><td>Jump to slot 3</td></tr>
-      <tr><td><kbd>Space</kbd> <kbd>4</kbd></td><td>Jump to slot 4</td></tr>
-    </table>
-    <div class="tip">Mark 2–4 active files per task. Switch instantly without fuzzy-finding.</div>
+  <div class="legend">
+    <div class="legend-item"><kbd>Space</kbd>&nbsp; Leader key</div>
+    <div class="legend-item"><kbd>C-x</kbd>&nbsp; Ctrl + x</div>
+    <div class="legend-item"><kbd>]</kbd> <kbd>[</kbd>&nbsp; next / previous (repeatable)</div>
   </div>
 
-  <div class="section">
-    <h2>LSP — clangd (C / C++)</h2>
-    <table>
-      <tr><th>Key</th><th>Action</th></tr>
-      <tr><td><kbd>g</kbd> <kbd>d</kbd></td><td>Go to definition</td></tr>
-      <tr><td><kbd>g</kbd> <kbd>D</kbd></td><td>Go to declaration</td></tr>
-      <tr><td><kbd>g</kbd> <kbd>r</kbd></td><td>Find all references</td></tr>
-      <tr><td><kbd>K</kbd></td><td>Hover documentation</td></tr>
-    </table>
-    <div class="note">Inline diagnostics (virtual text, signs, underlines) are <strong>disabled</strong> — LSP is active but silent. Use <kbd>g</kbd><kbd>r</kbd> and <kbd>K</kbd> to inspect.</div>
+  <div class="columns">
+
+    <div class="section">
+      <h2>Fuzzy Finding — fzf-lua</h2>
+      <table>
+        <tr><th>Key</th><th>Action</th></tr>
+        <tr><td><kbd>g</kbd><kbd>F</kbd></td><td>Find files</td></tr>
+        <tr><td><kbd>g</kbd><kbd>/</kbd></td><td>Live grep</td></tr>
+        <tr><td><kbd>Space</kbd> <kbd>f</kbd><kbd>b</kbd></td><td>Find open buffers</td></tr>
+        <tr><td><kbd>Space</kbd> <kbd>f</kbd><kbd>h</kbd></td><td>Search help tags</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>File Bookmarks — Harpoon</h2>
+      <table>
+        <tr><th>Key</th><th>Action</th></tr>
+        <tr><td><kbd>Space</kbd> <kbd>a</kbd></td><td>Add current file</td></tr>
+        <tr><td><kbd>C-e</kbd></td><td>Toggle quick menu</td></tr>
+        <tr><td><kbd>Space</kbd> <kbd>1</kbd></td><td>Jump to slot 1</td></tr>
+        <tr><td><kbd>Space</kbd> <kbd>2</kbd></td><td>Jump to slot 2</td></tr>
+        <tr><td><kbd>Space</kbd> <kbd>3</kbd></td><td>Jump to slot 3</td></tr>
+        <tr><td><kbd>Space</kbd> <kbd>4</kbd></td><td>Jump to slot 4</td></tr>
+      </table>
+      <div class="tip">Mark 2–4 active files per task. Switch instantly without fuzzy-finding.</div>
+    </div>
+
+    <div class="section">
+      <h2>LSP — clangd (C / C++)</h2>
+      <table>
+        <tr><th>Key</th><th>Action</th></tr>
+        <tr><td><kbd>g</kbd><kbd>d</kbd></td><td>Go to definition</td></tr>
+        <tr><td><kbd>g</kbd><kbd>D</kbd></td><td>Go to declaration</td></tr>
+        <tr><td><kbd>g</kbd><kbd>r</kbd></td><td>Find all references</td></tr>
+        <tr><td><kbd>g</kbd><kbd>s</kbd></td><td>Workspace symbols</td></tr>
+        <tr><td><kbd>K</kbd></td><td>Hover documentation</td></tr>
+      </table>
+      <div class="note">Inline diagnostics are <strong>disabled</strong> — LSP is active but silent. Use <kbd>gr</kbd> and <kbd>K</kbd> to inspect.</div>
+    </div>
+
+    <div class="section">
+      <h2>Git — Gitsigns</h2>
+      <table>
+        <tr><th>Key</th><th>Action</th></tr>
+        <tr><td><kbd>]</kbd><kbd>c</kbd></td><td>Next hunk</td></tr>
+        <tr><td><kbd>[</kbd><kbd>c</kbd></td><td>Previous hunk</td></tr>
+        <tr><td><kbd>Space</kbd> <kbd>h</kbd><kbd>p</kbd></td><td>Preview hunk</td></tr>
+        <tr><td><kbd>Space</kbd> <kbd>h</kbd><kbd>b</kbd></td><td>Blame current line</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Editing — mini.nvim</h2>
+      <h3>Trailing Whitespace</h3>
+      <table>
+        <tr><td><kbd>Space</kbd> <kbd>c</kbd><kbd>w</kbd></td><td>Strip trailing whitespace</td></tr>
+      </table>
+      <h3>Surround</h3>
+      <table>
+        <tr><td><kbd>s</kbd><kbd>a</kbd></td><td>Add surrounding</td></tr>
+        <tr><td><kbd>s</kbd><kbd>d</kbd></td><td>Delete surrounding</td></tr>
+        <tr><td><kbd>s</kbd><kbd>r</kbd></td><td>Replace surrounding</td></tr>
+        <tr><td><kbd>s</kbd><kbd>f</kbd></td><td>Find surrounding (right)</td></tr>
+        <tr><td><kbd>s</kbd><kbd>F</kbd></td><td>Find surrounding (left)</td></tr>
+        <tr><td><kbd>s</kbd><kbd>h</kbd></td><td>Highlight surrounding</td></tr>
+      </table>
+      <h3>Auto Pairs</h3>
+      <div class="tip">Brackets, quotes and delimiters are closed automatically in insert mode.</div>
+    </div>
+
+    <div class="section">
+      <h2>Settings</h2>
+      <h3>Indentation — Linux Kernel Style</h3>
+      <table>
+        <tr><td>Tab width</td><td>8 (hard tabs, no expand)</td></tr>
+        <tr><td>Shift width</td><td>8</td></tr>
+        <tr><td>Smart indent</td><td>on</td></tr>
+      </table>
+      <h3>Editor</h3>
+      <table>
+        <tr><td>Line numbers</td><td>Relative + absolute</td></tr>
+        <tr><td>Color columns</td><td>80 and 100</td></tr>
+        <tr><td>Clipboard</td><td>System (unnamedplus)</td></tr>
+        <tr><td>Mouse</td><td>All modes</td></tr>
+        <tr><td>Search</td><td>Ignore case, smart-case override</td></tr>
+        <tr><td>Yank highlight</td><td>200 ms flash on yank</td></tr>
+      </table>
+      <div class="note">mail · gitcommit · text files: text width 75, spell check on.</div>
+    </div>
+
+    <div class="section span-2">
+      <h2>Plugins</h2>
+      <table>
+        <tr><th>Plugin</th><th>Purpose</th></tr>
+        <tr><td><span class="pill">nvim-lspconfig</span></td><td>LSP client — clangd for C / C++</td></tr>
+        <tr><td><span class="pill">fzf-lua</span></td><td>Fuzzy finder — files, grep, buffers, help</td></tr>
+        <tr><td><span class="pill">harpoon2</span></td><td>File bookmarks — instant jump to marked files</td></tr>
+        <tr><td><span class="pill">mini.nvim</span></td><td>auto-pairs · surround · trailing whitespace</td></tr>
+        <tr><td><span class="pill">lualine.nvim</span></td><td>Statusline — Kanagawa theme, global bar</td></tr>
+        <tr><td><span class="pill">kanagawa.nvim</span></td><td>Colour scheme — Dragon variant</td></tr>
+        <tr><td><span class="pill">nvim-treesitter</span></td><td>Syntax highlighting — C, C++, Lua, Rust, Python, Bash, Make, DeviceTree</td></tr>
+        <tr><td><span class="pill">gitsigns.nvim</span></td><td>Git hunk indicators in sign column + blame</td></tr>
+      </table>
+    </div>
+
   </div>
-
-  <div class="section">
-    <h2>Git — Gitsigns</h2>
-    <table>
-      <tr><th>Key</th><th>Action</th></tr>
-      <tr><td><kbd>]</kbd> <kbd>c</kbd></td><td>Next hunk</td></tr>
-      <tr><td><kbd>[</kbd> <kbd>c</kbd></td><td>Previous hunk</td></tr>
-      <tr><td><kbd>Space</kbd> <kbd>h</kbd> <kbd>p</kbd></td><td>Preview hunk</td></tr>
-      <tr><td><kbd>Space</kbd> <kbd>h</kbd> <kbd>b</kbd></td><td>Blame current line</td></tr>
-    </table>
-  </div>
-
-  <div class="section">
-    <h2>Editing — mini.nvim</h2>
-
-    <h3>Trailing Whitespace</h3>
-    <table>
-      <tr><td><kbd>Space</kbd> <kbd>c</kbd> <kbd>w</kbd></td><td>Strip trailing whitespace</td></tr>
-    </table>
-
-    <h3>Surround</h3>
-    <table>
-      <tr><td><kbd>s</kbd> <kbd>a</kbd></td><td>Add surrounding</td></tr>
-      <tr><td><kbd>s</kbd> <kbd>d</kbd></td><td>Delete surrounding</td></tr>
-      <tr><td><kbd>s</kbd> <kbd>r</kbd></td><td>Replace surrounding</td></tr>
-      <tr><td><kbd>s</kbd> <kbd>f</kbd></td><td>Find surrounding (right)</td></tr>
-      <tr><td><kbd>s</kbd> <kbd>F</kbd></td><td>Find surrounding (left)</td></tr>
-      <tr><td><kbd>s</kbd> <kbd>h</kbd></td><td>Highlight surrounding</td></tr>
-    </table>
-
-    <h3>Auto Pairs</h3>
-    <div class="tip">Brackets, quotes and delimiters are closed automatically in insert mode.</div>
-  </div>
-
-  <div class="section">
-    <h2>Settings</h2>
-
-    <h3>Indentation — Linux Kernel Style</h3>
-    <table>
-      <tr><td>Tab width</td><td>8 (hard tabs, no expand)</td></tr>
-      <tr><td>Shift width</td><td>8</td></tr>
-      <tr><td>Smart indent</td><td>on</td></tr>
-    </table>
-
-    <h3>Editor</h3>
-    <table>
-      <tr><td>Line numbers</td><td>Relative + absolute</td></tr>
-      <tr><td>Color columns</td><td>80 and 100</td></tr>
-      <tr><td>Clipboard</td><td>System (unnamedplus)</td></tr>
-      <tr><td>Mouse</td><td>All modes</td></tr>
-      <tr><td>Search</td><td>Ignore case, smart-case override</td></tr>
-      <tr><td>Yank highlight</td><td>200 ms flash on yank</td></tr>
-    </table>
-    <div class="note">mail · gitcommit · text files: text width 75, spell check on.</div>
-  </div>
-
-  <div class="section">
-    <h2>Plugins</h2>
-    <table>
-      <tr><th>Plugin</th><th>Purpose</th></tr>
-      <tr><td><span>nvim-lspconfig</span></td><td>LSP client — clangd</td></tr>
-      <tr><td><span>fzf-lua</span></td><td>Fuzzy finder</td></tr>
-      <tr><td><span>harpoon2</span></td><td>File bookmarks</td></tr>
-      <tr><td><span>mini.nvim</span></td><td>pairs · surround · trailspace</td></tr>
-      <tr><td><span>lualine.nvim</span></td><td>Statusline</td></tr>
-      <tr><td><span>kanagawa.nvim</span></td><td>Colour scheme — Dragon</td></tr>
-      <tr><td><span>nvim-treesitter</span></td><td>Syntax — C/C++, Lua, Rust, Python…</td></tr>
-      <tr><td><span>gitsigns.nvim</span></td><td>Git hunk indicators + blame</td></tr>
-    </table>
-  </div>
-
 </div>
 </body>
 </html>

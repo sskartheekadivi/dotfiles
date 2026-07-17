@@ -7,130 +7,132 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="page">
 
-<div class="header">
-  <h1>tmux</h1>
-  <p>Keyboard reference</p>
-  <div class="badges">
-    <span class="badge bg-green">tmux 3.2a</span>
-    <span class="badge bg-mauve">Catppuccin Mocha</span>
-    <span class="badge bg-blue">TPM v3.0.0</span>
-    <span class="badge bg-teal">Prefix: C-a</span>
-  </div>
-</div>
-
-<div class="legend">
-  <div class="legend-item"><kbd>C-a</kbd>&nbsp; Prefix — Ctrl + a</div>
-  <div class="legend-item"><kbd>M-x</kbd>&nbsp; Meta — Alt + x &nbsp;·&nbsp; no prefix needed</div>
-  <div class="legend-item"><kbd>prefix</kbd> <kbd>x</kbd>&nbsp; press prefix first, then x</div>
-</div>
-
-<div class="columns">
-
-  <div class="section">
-    <h2>Sessions</h2>
-    <table>
-      <tr><th>Key</th><th>Action</th></tr>
-      <tr><td><kbd>M-↑</kbd></td><td>Previous session</td></tr>
-      <tr><td><kbd>M-↓</kbd></td><td>Next session</td></tr>
-      <tr><td><kbd>prefix</kbd> <kbd>$</kbd></td><td>Rename session</td></tr>
-      <tr><td><kbd>prefix</kbd> <kbd>s</kbd></td><td>Interactive session list</td></tr>
-      <tr><td><kbd>prefix</kbd> <kbd>d</kbd></td><td>Detach</td></tr>
-    </table>
+  <div class="header">
+    <h1>tmux</h1>
+    <p>Keyboard reference</p>
+    <div class="badges">
+      <span class="badge bg-green">tmux 3.2a</span>
+      <span class="badge bg-mauve">Catppuccin Mocha</span>
+      <span class="badge bg-blue">TPM v3.0.0</span>
+      <span class="badge bg-teal">Prefix: C-a</span>
+    </div>
   </div>
 
-  <div class="section">
-    <h2>Windows</h2>
-    <table>
-      <tr><th>Key</th><th>Action</th></tr>
-      <tr><td><kbd>M-←</kbd></td><td>Previous window</td></tr>
-      <tr><td><kbd>M-→</kbd></td><td>Next window</td></tr>
-      <tr><td><kbd>M-c</kbd></td><td>New window (inherits CWD)</td></tr>
-      <tr><td><kbd>prefix</kbd> <kbd>,</kbd></td><td>Rename window</td></tr>
-      <tr><td><kbd>prefix</kbd> <kbd>w</kbd></td><td>Interactive window list</td></tr>
-    </table>
+  <div class="legend">
+    <div class="legend-item"><kbd>C-a</kbd>&nbsp; Prefix — Ctrl + a</div>
+    <div class="legend-item"><kbd>M-x</kbd>&nbsp; Meta — Alt + x &nbsp;·&nbsp; no prefix needed</div>
+    <div class="legend-item"><kbd>prefix</kbd> <kbd>x</kbd>&nbsp; press prefix first, then x</div>
   </div>
 
-  <div class="section">
-    <h2>Panes</h2>
+  <div class="columns">
 
-    <h3>Navigate</h3>
-    <table>
-      <tr><td><kbd>M-h</kbd></td><td>Focus left</td></tr>
-      <tr><td><kbd>M-j</kbd></td><td>Focus down</td></tr>
-      <tr><td><kbd>M-k</kbd></td><td>Focus up</td></tr>
-      <tr><td><kbd>M-l</kbd></td><td>Focus right</td></tr>
-    </table>
+    <div class="section">
+      <h2>Sessions</h2>
+      <table>
+        <tr><th>Key</th><th>Action</th></tr>
+        <tr><td><kbd>M-↑</kbd></td><td>Previous session</td></tr>
+        <tr><td><kbd>M-↓</kbd></td><td>Next session</td></tr>
+        <tr><td><kbd>prefix</kbd> <kbd>$</kbd></td><td>Rename session</td></tr>
+        <tr><td><kbd>prefix</kbd> <kbd>s</kbd></td><td>Interactive session list</td></tr>
+        <tr><td><kbd>prefix</kbd> <kbd>d</kbd></td><td>Detach</td></tr>
+      </table>
+    </div>
 
-    <h3>Resize</h3>
-    <table>
-      <tr><td><kbd>M-H</kbd></td><td>Resize left 5</td></tr>
-      <tr><td><kbd>M-J</kbd></td><td>Resize down 5</td></tr>
-      <tr><td><kbd>M-K</kbd></td><td>Resize up 5</td></tr>
-      <tr><td><kbd>M-L</kbd></td><td>Resize right 5</td></tr>
-    </table>
+    <div class="section">
+      <h2>Windows</h2>
+      <table>
+        <tr><th>Key</th><th>Action</th></tr>
+        <tr><td><kbd>M-←</kbd></td><td>Previous window</td></tr>
+        <tr><td><kbd>M-→</kbd></td><td>Next window</td></tr>
+        <tr><td><kbd>M-c</kbd></td><td>New window (inherits CWD)</td></tr>
+        <tr><td><kbd>prefix</kbd> <kbd>,</kbd></td><td>Rename window</td></tr>
+        <tr><td><kbd>prefix</kbd> <kbd>w</kbd></td><td>Interactive window list</td></tr>
+      </table>
+    </div>
 
-    <h3>Create &amp; Destroy</h3>
-    <table>
-      <tr><td><kbd>M-v</kbd></td><td>Split vertical — side by side (CWD)</td></tr>
-      <tr><td><kbd>M-s</kbd></td><td>Split horizontal — top/bottom (CWD)</td></tr>
-      <tr><td><kbd>M-z</kbd></td><td>Toggle zoom / fullscreen</td></tr>
-      <tr><td><kbd>M-x</kbd></td><td>Kill pane (prompts for confirmation)</td></tr>
-    </table>
+    <div class="section">
+      <h2>Panes</h2>
+      <h3>Navigate</h3>
+      <table>
+        <tr><td><kbd>M-h</kbd></td><td>Focus left</td></tr>
+        <tr><td><kbd>M-j</kbd></td><td>Focus down</td></tr>
+        <tr><td><kbd>M-k</kbd></td><td>Focus up</td></tr>
+        <tr><td><kbd>M-l</kbd></td><td>Focus right</td></tr>
+      </table>
+      <h3>Resize</h3>
+      <table>
+        <tr><td><kbd>M-H</kbd></td><td>Resize left 5</td></tr>
+        <tr><td><kbd>M-J</kbd></td><td>Resize down 5</td></tr>
+        <tr><td><kbd>M-K</kbd></td><td>Resize up 5</td></tr>
+        <tr><td><kbd>M-L</kbd></td><td>Resize right 5</td></tr>
+      </table>
+      <h3>Create &amp; Destroy</h3>
+      <table>
+        <tr><td><kbd>M-v</kbd></td><td>Split vertical — side by side (CWD)</td></tr>
+        <tr><td><kbd>M-s</kbd></td><td>Split horizontal — top/bottom (CWD)</td></tr>
+        <tr><td><kbd>M-z</kbd></td><td>Toggle zoom / fullscreen</td></tr>
+        <tr><td><kbd>M-x</kbd></td><td>Kill pane (prompts for confirmation)</td></tr>
+      </table>
+    </div>
 
-    <h3>Join &amp; Break</h3>
-    <table>
-      <tr><td><kbd>M--</kbd></td><td>Pull pane in — horizontal split</td></tr>
-      <tr><td><kbd>M-=</kbd></td><td>Pull pane in — vertical split</td></tr>
-      <tr><td><kbd>M-b</kbd></td><td>Break to new window (restores name)</td></tr>
-      <tr><td><kbd>M-B</kbd></td><td>Break to chosen session (tree picker)</td></tr>
-    </table>
-    <div class="note">Join &amp; Break open an interactive tree picker — use arrow keys to select the target.</div>
+    <div class="section">
+      <h2>Pane Join &amp; Break</h2>
+      <table>
+        <tr><th>Key</th><th>Action</th></tr>
+        <tr><td><kbd>M--</kbd></td><td>Pull pane in — horizontal split</td></tr>
+        <tr><td><kbd>M-=</kbd></td><td>Pull pane in — vertical split</td></tr>
+        <tr><td><kbd>M-b</kbd></td><td>Break to new window (restores name)</td></tr>
+        <tr><td><kbd>M-B</kbd></td><td>Break to chosen session (tree picker)</td></tr>
+      </table>
+      <div class="note">Join &amp; Break open an interactive tree picker — use arrow keys to select the target.</div>
+    </div>
+
+    <div class="section">
+      <h2>Copy Mode</h2>
+      <div class="note">vi keys · selection copied to system clipboard via xclip / wl-copy</div>
+      <table>
+        <tr><th>Key</th><th>Action</th></tr>
+        <tr><td><kbd>[</kbd></td><td>Enter copy mode</td></tr>
+        <tr><td><kbd>v</kbd></td><td>Begin selection</td></tr>
+        <tr><td><kbd>C-v</kbd></td><td>Toggle rectangle (block) selection</td></tr>
+        <tr><td><kbd>y</kbd></td><td>Yank to clipboard &amp; exit</td></tr>
+        <tr><td><kbd>Escape</kbd></td><td>Cancel / exit</td></tr>
+      </table>
+      <div class="tip">Hold <kbd>Shift</kbd> and drag to use the terminal's native selection, bypassing copy mode.</div>
+    </div>
+
+    <div class="section">
+      <h2>Prefix Commands</h2>
+      <table>
+        <tr><th>Key</th><th>Action</th></tr>
+        <tr><td><kbd>prefix</kbd> <kbd>C-a</kbd></td><td>Send literal Ctrl+a to terminal</td></tr>
+        <tr><td><kbd>prefix</kbd> <kbd>r</kbd></td><td>Reload config</td></tr>
+        <tr><td><kbd>prefix</kbd> <kbd>:</kbd></td><td>tmux command prompt</td></tr>
+        <tr><td><kbd>prefix</kbd> <kbd>?</kbd></td><td>List all key bindings</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Plugin Manager — TPM</h2>
+      <table>
+        <tr><th>Key</th><th>Action</th></tr>
+        <tr><td><kbd>prefix</kbd> <kbd>I</kbd></td><td>Install plugins</td></tr>
+        <tr><td><kbd>prefix</kbd> <kbd>U</kbd></td><td>Update plugins</td></tr>
+        <tr><td><kbd>prefix</kbd> <kbd>M-u</kbd></td><td>Remove unused plugins</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Mouse</h2>
+      <p style="font-size:8.5pt; color:var(--subtext0); margin-bottom:5px;">
+        Mouse is <strong>enabled</strong> — click to focus a pane or window, drag to scroll.
+      </p>
+      <div class="tip">Hold <kbd>Shift</kbd> to bypass tmux and use native terminal selection.</div>
+    </div>
+
   </div>
-
-  <div class="section">
-    <h2>Copy Mode</h2>
-    <div class="note">vi keys · selection copied to system clipboard via xclip / wl-copy</div>
-    <table>
-      <tr><th>Key</th><th>Action</th></tr>
-      <tr><td><kbd>[</kbd></td><td>Enter copy mode</td></tr>
-      <tr><td><kbd>v</kbd></td><td>Begin selection</td></tr>
-      <tr><td><kbd>C-v</kbd></td><td>Toggle rectangle (block) selection</td></tr>
-      <tr><td><kbd>y</kbd></td><td>Yank to clipboard &amp; exit</td></tr>
-      <tr><td><kbd>Escape</kbd></td><td>Cancel / exit</td></tr>
-    </table>
-    <div class="tip">Hold <kbd>Shift</kbd> and drag to use the terminal's native selection, bypassing tmux copy mode.</div>
-  </div>
-
-  <div class="section">
-    <h2>Prefix Commands</h2>
-    <table>
-      <tr><th>Key</th><th>Action</th></tr>
-      <tr><td><kbd>prefix</kbd> <kbd>C-a</kbd></td><td>Send literal Ctrl+a to terminal</td></tr>
-      <tr><td><kbd>prefix</kbd> <kbd>r</kbd></td><td>Reload config</td></tr>
-      <tr><td><kbd>prefix</kbd> <kbd>:</kbd></td><td>tmux command prompt</td></tr>
-      <tr><td><kbd>prefix</kbd> <kbd>?</kbd></td><td>List all key bindings</td></tr>
-    </table>
-  </div>
-
-  <div class="section">
-    <h2>Plugin Manager — TPM</h2>
-    <table>
-      <tr><th>Key</th><th>Action</th></tr>
-      <tr><td><kbd>prefix</kbd> <kbd>I</kbd></td><td>Install plugins</td></tr>
-      <tr><td><kbd>prefix</kbd> <kbd>U</kbd></td><td>Update plugins</td></tr>
-      <tr><td><kbd>prefix</kbd> <kbd>M-u</kbd></td><td>Remove unused plugins</td></tr>
-    </table>
-  </div>
-
-  <div class="section">
-    <h2>Mouse</h2>
-    <p style="font-size:8.5pt; color:var(--subtext0); margin-bottom:4px;">
-      Mouse is <strong>enabled</strong> — click to focus a pane or window, drag to scroll.
-    </p>
-    <div class="tip">Hold <kbd>Shift</kbd> to bypass tmux and use native terminal selection.</div>
-  </div>
-
 </div>
 </body>
 </html>

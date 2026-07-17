@@ -1,4 +1,6 @@
-/* Catppuccin Latte — print-optimised cheatsheet theme */
+/* Catppuccin Latte — cheatsheet theme
+   Screen: centered card, balanced 2-column grid
+   Print:  A4, auto-fill 2 columns                */
 
 :root {
   --base:     #eff1f5;
@@ -26,102 +28,118 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* ── Screen viewport ─────────────────────────────── */
+
 body {
   font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
   font-size: 9pt;
   line-height: 1.45;
   color: var(--text);
+  background: var(--mantle);
+  padding: 2rem 1rem;
+}
+
+/* ── Centered page card ──────────────────────────── */
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
   background: var(--base);
-  padding: 1cm;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(76, 79, 105, 0.12);
 }
 
 /* ── Header ──────────────────────────────────────── */
 
 .header {
   text-align: center;
-  padding-bottom: 8px;
-  margin-bottom: 10px;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
   border-bottom: 2px solid var(--mauve);
 }
 
 .header h1 {
-  font-size: 20pt;
+  font-size: 22pt;
   font-weight: 800;
   color: var(--text);
   letter-spacing: -0.5px;
 }
 
 .header p {
-  font-size: 8.5pt;
+  font-size: 9pt;
   color: var(--subtext0);
   margin-top: 2px;
 }
 
 .badges {
   display: flex;
-  gap: 5px;
+  gap: 6px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 .badge {
-  font-size: 7.5pt;
+  font-size: 8pt;
   font-weight: 600;
-  padding: 1px 8px;
-  border-radius: 10px;
+  padding: 2px 10px;
+  border-radius: 12px;
   color: white;
   letter-spacing: 0.2px;
 }
-.bg-green   { background: var(--green); }
-.bg-mauve   { background: var(--mauve); }
-.bg-blue    { background: var(--blue); }
-.bg-teal    { background: var(--teal); }
-.bg-peach   { background: var(--peach); }
-.bg-sapphire{ background: var(--sapphire); }
+.bg-green    { background: var(--green); }
+.bg-mauve    { background: var(--mauve); }
+.bg-blue     { background: var(--blue); }
+.bg-teal     { background: var(--teal); }
+.bg-peach    { background: var(--peach); }
+.bg-sapphire { background: var(--sapphire); }
 
 /* ── Legend bar ──────────────────────────────────── */
 
 .legend {
   display: flex;
-  gap: 18px;
+  gap: 1.5rem;
   flex-wrap: wrap;
   align-items: center;
   background: var(--mantle);
-  border-radius: 4px;
-  padding: 5px 10px;
-  margin-bottom: 10px;
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin-bottom: 1.2rem;
   font-size: 8.5pt;
   color: var(--subtext0);
 }
 
-.legend-item { display: flex; align-items: center; gap: 4px; }
+.legend-item { display: flex; align-items: center; gap: 5px; }
 
-/* ── Two-column layout ───────────────────────────── */
+/* ── Two-column grid ─────────────────────────────── */
 
 .columns {
-  column-count: 2;
-  column-gap: 0.7cm;
-  column-fill: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1.5rem;
+  align-items: start;
 }
 
 /* ── Sections ────────────────────────────────────── */
 
 .section {
   break-inside: avoid;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
-.break-before { break-before: column; }
+.span-2 {
+  grid-column: 1 / -1;
+}
 
 h2 {
-  font-size: 9pt;
+  font-size: 9.5pt;
   font-weight: 700;
   color: white;
   background: var(--mauve);
-  padding: 2px 8px;
-  border-radius: 3px;
-  margin-bottom: 4px;
+  padding: 3px 9px;
+  border-radius: 4px;
+  margin-bottom: 5px;
   break-after: avoid;
   letter-spacing: 0.2px;
 }
@@ -130,7 +148,7 @@ h3 {
   font-size: 8.5pt;
   font-weight: 600;
   color: var(--mauve);
-  margin: 6px 0 3px;
+  margin: 7px 0 4px;
   break-after: avoid;
 }
 
@@ -141,7 +159,7 @@ table {
   border-collapse: collapse;
   break-inside: avoid;
   font-size: 8.5pt;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 th {
@@ -151,12 +169,12 @@ th {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  padding: 2px 6px;
+  padding: 3px 7px;
   text-align: left;
 }
 
 td {
-  padding: 2px 6px;
+  padding: 3px 7px;
   border-bottom: 1px solid var(--crust);
   vertical-align: middle;
 }
@@ -177,7 +195,7 @@ kbd {
   border-bottom: 2px solid var(--overlay0);
   border-radius: 3px;
   padding: 0 4px;
-  line-height: 1.6;
+  line-height: 1.7;
   white-space: nowrap;
 }
 
@@ -185,10 +203,10 @@ kbd {
 
 .note, .tip {
   font-size: 7.5pt;
-  padding: 3px 7px;
-  border-radius: 0 3px 3px 0;
+  padding: 4px 8px;
+  border-radius: 0 4px 4px 0;
   margin: 4px 0 2px;
-  line-height: 1.4;
+  line-height: 1.45;
   break-inside: avoid;
   color: var(--subtext1);
 }
@@ -196,15 +214,9 @@ kbd {
 .note { background: #dff0ff; border-left: 3px solid var(--sapphire); }
 .tip  { background: #e5f5e5; border-left: 3px solid var(--green); }
 
-/* ── Plugins list ────────────────────────────────── */
+/* ── Plugin pill labels ──────────────────────────── */
 
-.plugins {
-  font-size: 8pt;
-  color: var(--subtext0);
-  line-height: 1.6;
-}
-
-.plugins span {
+.pill {
   display: inline-block;
   background: var(--surface0);
   border-radius: 3px;
@@ -212,14 +224,41 @@ kbd {
   font-family: ui-monospace, monospace;
   font-size: 7.5pt;
   color: var(--text);
-  margin-right: 3px;
 }
 
 /* ── Print overrides ─────────────────────────────── */
 
 @media print {
-  body       { background: white; padding: 0; }
-  .note      { background: #f0f8ff; }
-  .tip       { background: #f0fff0; }
-  .legend    { background: #f0f0f0; }
+  body {
+    background: white;
+    padding: 0;
+    font-size: 9pt;
+  }
+
+  .page {
+    max-width: none;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    background: white;
+  }
+
+  /* Switch from grid to CSS columns for print flow */
+  .columns {
+    display: block;
+    column-count: 2;
+    column-gap: 0.7cm;
+    column-fill: auto;
+  }
+
+  .section { break-inside: avoid; margin-bottom: 0.35cm; }
+
+  .note { background: #f0f8ff; }
+  .tip  { background: #f0fff0; }
+  .legend { background: #f0f0f0; }
+
+  kbd {
+    border: 1px solid #aaa;
+    border-bottom: 2px solid #888;
+  }
 }
